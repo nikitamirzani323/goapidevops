@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  devops-master-api:
+    container_name: devops-master-api
+    image: devops-master-api:0.0.0.1
+    build: .
+    ports:
+      - 1212:1212
+    restart: always
